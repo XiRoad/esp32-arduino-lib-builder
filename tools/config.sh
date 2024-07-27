@@ -25,7 +25,10 @@ if [ -z $IDF_TARGET ]; then
 fi
 
 # Owner of the target ESP32 Arduino repository
-AR_USER="espressif"
+# XiRoad에서 호스팅하는 소스 코드로부터 빌드합니다.
+# 이걸 하려면 XiRoad org에 arduino-esp32, esp-idf, esp32-arduino-libs 저장소가 있어야 합니다.
+# 다 fork 해두었습니다.
+AR_USER="XiRoad"
 
 # The full name of the repository
 AR_REPO="$AR_USER/arduino-esp32"
